@@ -3,10 +3,13 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.jsx',
 })
 
+const isProd = process.env.ENVIRONMENT === 'production'
+
 module.exports = withNextra({
   images: {
     loader: 'akamai',
     path: '',
   },
   output: 'export',
+  basePath: isProd ? '/scala-kube-operator-scaffold' : undefined,
 })
