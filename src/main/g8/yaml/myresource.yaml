@@ -1,0 +1,6 @@
+apiVersion: myoperator.com/v1
+kind: MyResource
+metadata:
+  name: my-resource
+spec:
+  greeting: "Hello from my resource!"
