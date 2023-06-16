@@ -3,5 +3,12 @@
     "type": "separator",
     "title": "Getting Started"
   },
-  "index": "Introduction"
+  "index": "Introduction",
+  "quickstart": "Quickstart",
+  "understanding-template": "Understanding the template",
+  "-- Configuration --": {
+    "type": "separator",
+    "title": "Configuration"
+  },
+  "template-properties": "Template Properties"
 }

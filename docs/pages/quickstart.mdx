@@ -1,0 +1,40 @@
+import { Steps } from 'nextra-theme-docs'
+import { Callout } from 'nextra/components'
+
+# Quickstart
+
+This guide will walk you through the steps to create a new project from the KSO template.
+
+## Prerequisites
+
+- Make sure you have [Scala](https://www.scala-lang.org/download/) installed on your machine.
+- You will need [sbt](https://www.scala-sbt.org/download.html) (Scala Build Tool) installed on your machine.
+- You also need to have [Kubernetes](https://kubernetes.io/docs/tasks/tools/) and [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed and properly configured.
+
+## Setting Up the Project
+
+<Steps>
+
+### To create a new project from the KSO template, use the following `sbt` command:
+
+```bash
+sbt new do4-2022/scala-kube-operator-scaffold.g8
+```
+
+<Callout type="info">
+  This command will prompt you for the properties needed to generate the project. For more information on the properties, see the [Template Properties](/template-properties) page.
+</Callout>
+
+### Navigate to the project directory:
+
+```bash
+cd project-name
+```
+
+<Callout type="info">
+  Replace `project-name` with the name you provided when generating the project.
+</Callout>
+
+### Start coding and have fun!
+
+</Steps>
