@@ -2,8 +2,8 @@ lazy val root = project
   .in(file("."))
   .settings(
     scalaVersion := "2.13.8",
-    organization := "com.myoperator",
-    name         := "hello",
+    organization := "$organization$",
+    name         := "$name$",
     version      := "0.0.1",
     libraryDependencies ++= Seq(
       "com.coralogix"                 %% "zio-k8s-operator"       % "1.4.3",
@@ -16,7 +16,7 @@ lazy val root = project
   .enablePlugins(JavaServerAppPackaging)
 
 externalCustomResourceDefinitions := Seq(
-  file("crds/myresource.yaml")
+  file("crds/$example_resource_name_singular$.yaml")
 )
 
 enablePlugins(K8sCustomResourceCodegenPlugin)

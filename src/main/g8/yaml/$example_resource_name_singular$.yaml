@@ -1,0 +1,6 @@
+apiVersion: $example_resource_group_organization$.$example_resource_group_extension$/v1
+kind: $example_resource_name_kind$
+metadata:
+  name: my-resource
+spec:
+  greeting: "Hello from my resource!"
