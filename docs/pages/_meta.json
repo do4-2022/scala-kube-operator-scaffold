@@ -5,6 +5,7 @@
   },
   "index": "Introduction",
   "quickstart": "Quickstart",
+  "deploying": "Deploying",
   "understanding-template": "Understanding the template",
   "-- Configuration --": {
     "type": "separator",

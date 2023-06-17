@@ -1,0 +1,49 @@
+import { Callout } from 'nextra/components'
+
+# Deploying the chart
+
+This guide will guide you through the process of deploying the operator.
+
+## Prerequisites
+
+- A Kubernetes cluster with version >= 1.16
+- Helm 3
+- Docker or a container registry
+
+## Deploying the chart on a local cluster (minikube, kind or k3d)
+
+### 1. Build the operator image
+
+```bash
+docker build -t <organization>/<name> .
+```
+
+<Callout type="info">
+  Replace `<name>` and `<organization>` with the name you provided when generating the project.
+</Callout>
+
+### 2. Load the image into the cluster
+
+#### Minikube
+
+```bash
+minikube image load <organization>/<name>
+```
+
+#### k3d
+
+```bash
+k3d image import <organization>/<name>
+```
+
+#### kind
+
+```bash
+kind load docker-image <organization>/<name>
+```
+
+### 3. Deploy the chart
+
+```bash
+helm install <name> ./chart
+```
