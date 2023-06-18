@@ -15,34 +15,44 @@ This guide will guide you through the process of deploying the operator.
 ### 1. Build the operator image
 
 ```bash
-docker build -t <organization>/<name> .
+sbt docker:publishLocal
 ```
-
-<Callout type="info">
-  Replace `<name>` and `<organization>` with the name you provided when generating the project.
-</Callout>
 
 ### 2. Load the image into the cluster
 
 #### Minikube
 
 ```bash
-minikube image load <organization>/<name>
+minikube image load <name>:<version>
 ```
+
+<Callout type="info">
+  Replace `<name>` and `<version>` with the name you provided when generating the project and the current version of your application (default: 0.0.1).
+</Callout>
 
 #### k3d
 
 ```bash
-k3d image import <organization>/<name>
+k3d image import <name>:<version>
 ```
 
 #### kind
 
 ```bash
-kind load docker-image <organization>/<name>
+kind load docker-image <name>:<version>
 ```
 
 ### 3. Deploy the chart
+
+Start by changing the image deployed in the `chart/values.yaml` file.
+
+```yaml
+image:
+  repository: <name>
+  tag: <version>
+```
+
+Then, deploy the chart.
 
 ```bash
 helm install <name> ./chart
