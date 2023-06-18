@@ -30,7 +30,7 @@
 </p>
    
 <h4>
-    <a href="https://do4-2022.github.io/scala-kube-operator-scaffold/">Documentation</a>
+    <a href="https://do4-2022.github.io/scala-kube-operator-scaffold.g8/">Documentation</a>
   <span> · </span>
     <a href="https://github.com/do4-2022/scala-kube-operator-scaffold/issues/">Report Bug</a>
   <span> · </span>
@@ -52,7 +52,7 @@ KSO is a robust Kubernetes Operator Scaffold written in Scala designed to stream
 
 The complete documentation for the KSO is available at our documentation site. You can find detailed instructions on how to use it, along with guides and tutorials.
 
-Please click [here](https://do4-2022.github.io/scala-kube-operator-scaffold/) to get started.
+Please click [here](https://do4-2022.github.io/scala-kube-operator-scaffold.g8/) to get started.
 
 We encourage users to familiarize themselves with the documentation to fully utilize the capabilities of KSO. If you encounter any issues or have suggestions, please don't hesitate to raise an issue on our GitHub page.
 

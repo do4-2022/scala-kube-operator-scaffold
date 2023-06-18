@@ -11,5 +11,5 @@ module.exports = withNextra({
     path: '',
   },
   output: 'export',
-  basePath: isProd ? '/scala-kube-operator-scaffold' : undefined,
+  basePath: isProd ? '/scala-kube-operator-scaffold.g8' : undefined,
 })
